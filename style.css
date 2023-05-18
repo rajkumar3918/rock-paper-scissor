@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.timerAfter{
+    position: absolute;
+    top: 20px;
+    left: 43.5%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.timer{
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    height: 300px;
+    width: 600px;
+    border-radius: 30px;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    box-shadow: 1px 1px 100px black;
+
+}
+#watch{
+    font-size: 40px;
+}
+#start{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(252, 83, 83);
+    border-radius: 10px;
+}
+
+#user{
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(151, 254, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+    position: relative;
+}
+
+#image-container{
+    height: 60vh;
+    width: 30vw;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#user-img{
+    height: 40vh;
+    width: 20vw;
+   
+}
+#cp-iage{
+    height: 60vh;
+    width: 30vw;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#computer-img{
+    height: 40vh;
+    width: 20vw;
+}
+#computer{
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(146, 222, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#cpScore,#userScore{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    border: 2px solid red;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+#button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+#button-container button{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    opacity: 0.6;
+}
+#button-container button:hover{
+    opacity: 1;
+}
+
+.highlight{
+    transform:scale(105%);
+    transition: 1s;
+    z-index: 1;
+}
+
+.animation{
+    animation: mymove 1s ;
+    transition: 1s;
+}
+.animation1{
+    animation: mymove1 1s ;
+    transition: 1s;
+}
+
+
+@keyframes mymove{
+    0%{
+        transform-origin: left;
+        transform: rotate(0deg) ;    
+    }25%{
+        transform-origin: left;
+        transform: rotate(-30deg) ;   
+    }
+    50%{
+        transform-origin: left;
+        transform: rotate(30deg) ;    
+    }100%{
+        transform-origin: left;
+        transform: rotate(0deg) ;   
+    }
+}
+
+
+@keyframes mymove1{
+    0%{
+        transform-origin: right;
+        transform: rotate(0deg) ;    
+    }25%{
+        transform-origin: right;
+        transform: rotate(-30deg) ;   
+    }
+    50%{
+        transform-origin: right;
+        transform: rotate(30deg) ;    
+    }100%{
+        transform-origin: right;
+        transform: rotate(0deg) ;   
+    }
+}
+
+#playAgain{
+    position: absolute;
+    bottom: 18%;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(252, 112, 112);
+    border-radius: 20px;
+    display: none;
+    z-index: 2;
+}

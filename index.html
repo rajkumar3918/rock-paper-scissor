@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="timer" class="timer">
+        <div id="watch"> Set Time In Min</div>
+        <input style="margin: 10px; width: 80px; height: 50px; border: 2px solid black; text-align: center; font-size: larger;" id="settime" type="text" placeholder="Set Time">
+
+        <div>
+            <button id="start">START</button>
+        </div>
+    </div>
+    <div id="user">
+        <div id="image-container">
+            <img id="user-img" src="https://st2.depositphotos.com/4283399/10995/v/600/depositphotos_109957548-stock-illustration-rock-scissors-and-paper-symbols.jpg" alt="">
+        </div>
+        <div id="button-container">
+            <button id="rock">rock</button>
+            <button id="paper">paper</button>
+            <button id="siszer">sisser</button>
+            <input style="display: none;" id="cpValue" type="text">
+        </div>
+       
+        <input id="userScore" type="text" placeholder="Score" readonly >
+    </div>
+    <div id="computer">
+        <div id="cp-iage">
+            <img id="computer-img" src="https://st2.depositphotos.com/4283399/10995/v/600/depositphotos_109957548-stock-illustration-rock-scissors-and-paper-symbols.jpg" alt="">
+        </div>
+        <input id="cpScore" type="text" placeholder="Score" readonly>
+
+    </div>
+    <input id="playAgain" type="button" value="Play Again" onclick="window.location.reload()">
+</body>
+<script src="./script.js"></script>
+</html>
